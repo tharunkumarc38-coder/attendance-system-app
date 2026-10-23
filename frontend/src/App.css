@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f0f4f8;
+  color: #1e293b;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.login-container {
+  display: flex;
+  width: 100%;
+  max-width: 950px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.login-left {
+  flex: 1;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: #ffffff;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.brand-icon {
+  font-size: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+
+.brand h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.brand p {
+  font-size: 13px;
+  opacity: 0.85;
+  margin: 0;
+}
+
+.welcome-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.welcome-section p {
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.feature span {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.login-right {
+  flex: 1;
+  padding: 50px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 360px;
+}
+
+.login-heading h2 {
+  font-size: 26px;
+  color: #0f172a;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.login-heading p {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #0f172a !important;
+  background-color: #f8fafc !important;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+  color: #94a3b8;
+}
+
+.form-group input:focus {
+  border-color: #3b82f6;
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  font-size: 13px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #475569;
+  cursor: pointer;
+}
+
+.forgot-button {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.forgot-button:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.35);
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.45);
+  background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
+}
+
+.demo-note {
+  text-align: center;
+  font-size: 11px;
+  color: #94a3b8;
+  margin-top: 24px;
+}
+
+/* ==========================================
+   HIGH CONTRAST & ACCENT COLORS FOR HEADINGS
+   ========================================== */
+h1, .dashboard-header h1, .dashboard-title {
+  color: #2563eb !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+}
+
+h2, h3, h4, h5, h6,
+div[class*="notification"] h2,
+div[class*="notification"] h3,
+div[class*="notification"] h4,
+div[class*="notification"] p,
+div[class*="notification"] span,
+div[class*="notification"] header,
+.notifications-title {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
+div[class*="notification"] button {
+  background: #3b82f6 !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 6px 14px !important;
+  border-radius: 6px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+div[class*="notification"] button:hover {
+  background: #1d4ed8 !important;
+}
+
+/* ==========================================
+   POLISHED ATTENDANCE PAGE & TABLE STYLING
+   ========================================== */
+.attendance-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f0f4f8;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.attendance-container {
+  width: 100%;
+  max-width: 950px;
+}
+
+.attendance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  background: #ffffff;
+  padding: 24px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.back-btn {
+  background: #f1f5f9;
+  color: #2563eb;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #e2e8f0;
+}
+
+.attendance-header h1 {
+  color: #2563eb !important;
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+
+.attendance-header p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.attendance-icon {
+  font-size: 40px;
+}
+
+/* Stat Cards Layout */
+.attendance-overview {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.attendance-summary-card,
+.attendance-stat-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.summary-label {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.summary-percentage {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 4px 0;
+}
+
+.eligibility-badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.eligibility-badge.eligible {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.eligibility-badge.ineligible {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.attendance-stat-card strong {
+  font-size: 28px;
+  font-weight: 700;
+  display: block;
+}
+
+.attendance-stat-card span {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.attendance-stat-card.present strong { color: #16a34a; }
+.attendance-stat-card.absent strong { color: #dc2626; }
+.attendance-stat-card.total strong { color: #2563eb; }
+
+/* Table Section */
+.subject-attendance {
+  background: #ffffff;
+  padding: 24px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.section-heading h2 {
+  color: #4f46e5 !important;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.section-heading p {
+  color: #64748b;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.attendance-table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  padding: 14px 20px;
+  background: #f8fafc;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #334155;
+  font-size: 14px;
+  border: 1px solid #e2e8f0;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  padding: 14px 20px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.table-row:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.row-date {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.row-id {
+  color: #64748b;
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+}
+
+.status-badge.present {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-badge.absent {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+  .login-left {
+    display: none;
+  }
+  .attendance-overview {
+    grid-template-columns: 1fr 1fr;
+  }
+}
